@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./js/bundle.js"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div id="app">
+    <div v-if="(chosenCountry.name != '')">
+      <h2>{{chosenCountry.name}}</h2>
+      <img v-bind:src="chosenCountry.flag" alt="flag">
+    </div>
+    <h2> Total Population </h2>
+    <span> {{ totalPopulation }} </span>
+    <section>
+      <div v-for="country in fullList">
+        <button name="country-button" v-on:click="clickedCountry(country)">{{country.name}}</button>        
+      </div>
+		</section>
+  </div>
+</body>
+</html>

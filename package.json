@@ -1,0 +1,17 @@
+{
+  "name": "w7_d2_lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {},
+  "devDependencies": {
+    "vue": "^2.6.11",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "scripts": {
+    "build": "webpack -w"  
+  },
+  "author": "",
+  "license": "ISC"
+}
